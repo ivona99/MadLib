@@ -12,13 +12,18 @@ let questionArray = [
     `${firstWord} computer-specific model ("commodore 64" etc)`,
     `${firstWord} famous school`,
     `${firstWord} word for people you know (friends, family etc)`,
-    `${firstWord} type of bug`
+    `${firstWord} type of bug`,
+    `${firstWord} computer-specific part (plural-tense, ie "screens")`,
+
+    
 ];
 
 for(var i = numberOfQuestions; i >= 0; i--){
     console.log(i);
     console.log("questionCounter", questionCounter);
     console.log(questionArray[questionCounter] + `... (${numberOfQuestions} questions left)`);
+    userInputs.push(prompt(questionArray[questionCounter] + `... (${numberOfQuestions} questions left)`));
+    console.log("userInputs", userInputs);
 
     questionCounter++;
 
