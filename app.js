@@ -29,8 +29,12 @@ for(var i = numberOfQuestions; i >= 0; i--){
 
     numberOfQuestions--;
 }
+
+
 let originalStory = `<h2>In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]} at ${userInputs[3]}. It was at this time that ${userInputs[4]} discovered a ${userInputs[5]} had gotten trapped in one."</h2>`;
 console.log(originalStory);
+document.write(originalStory);
+alert('All done! Ready for your totally-accurate, not-at-all confusing history of tech??');
 
 
 
