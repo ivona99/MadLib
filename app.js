@@ -4,6 +4,19 @@
 // console.log(originalStory);
 let userInputs =[];
 let numberOfQuestions = 6;
+let firstWord = "Enter a ";
+let questionArray = [
+    `${firstWord} year (2001, 2002, etc)`,
+    `${firstWord} person's full name`,
+    `${firstWord} computer-specific model ("commodore 64" etc)`,
+    `${firstWord} famous school`,
+    `${firstWord} word for people you know (friends, family etc)`,
+    `${firstWord} type of bug`
+];
+
+for(var i = numberOfQuestions; i >= 0; i--){
+    console.log(i);
+}
 let originalStory = `<h2>In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]} at ${userInputs[3]}. It was at this time that ${userInputs[4]} discovered a ${userInputs[5]} had gotten trapped in one."</h2>`;
 console.log(originalStory);
 
