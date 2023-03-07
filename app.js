@@ -4,6 +4,7 @@
 // console.log(originalStory);
 let userInputs =[];
 let numberOfQuestions = 6;
+let questionCounter = 0;
 let firstWord = "Enter a ";
 let questionArray = [
     `${firstWord} year (2001, 2002, etc)`,
@@ -16,6 +17,12 @@ let questionArray = [
 
 for(var i = numberOfQuestions; i >= 0; i--){
     console.log(i);
+    console.log("questionCounter", questionCounter);
+    console.log(questionArray[questionCounter] + `... (${numberOfQuestions} questions left)`);
+
+    questionCounter++;
+
+    numberOfQuestions--;
 }
 let originalStory = `<h2>In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]} at ${userInputs[3]}. It was at this time that ${userInputs[4]} discovered a ${userInputs[5]} had gotten trapped in one."</h2>`;
 console.log(originalStory);
